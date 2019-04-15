@@ -1,0 +1,66 @@
+body {
+    background: #000;
+}
+
+.container{
+    width: 30vh;
+    height: 30vh;
+    background: white;
+    margin: 10vh auto;
+}
+
+.container__number {
+    font-size: 25vh;
+    text-align: center;
+    display: block;
+    /* display: none; */
+    animation: countdown 20s linear 1s;
+}
+
+@keyframes countdown{
+    0%, 10% {
+        transform: translate(0, 0)
+    }
+    
+    10%, 20%{
+        transform: translate(0, -100%)
+    }
+
+    30%, 40% {
+        transform: translate(0, -200%)
+    }
+
+
+    40%, 50% {
+        transform: translate(0, -300%)
+    }
+
+    50%, 60% {
+        transform: translate(0, -400%);
+    }
+/* 
+
+
+
+
+
+    60% {
+        transform: translate(0, -500%)
+    }
+
+    70% {
+        transform: translate(0, -600%)
+    }
+
+    80% {
+        transform: translate(0, -700%)
+    }
+
+    90% {
+        transform: translate(0, -800%)
+    }
+
+    100% {
+        transform: translate(0, -900%)
+    } */
+}
